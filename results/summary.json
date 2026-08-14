@@ -1,0 +1,60 @@
+{
+  "total_exposure_usd": 6880000.0,
+  "expected_annual_damage_usd": 13209.97187925577,
+  "ead_components": {
+    "ead_usd": 13209.97187925577,
+    "ead_core_usd": 12350.738515600136,
+    "tail_usd": 859.2333636556333,
+    "frequent_tail_usd": 0.0
+  },
+  "ead_by_asset_usd": {
+    "A - Coastal Highway": 821.635076180142,
+    "B - Access Causeway": 12388.336803075628,
+    "C - Inland Arterial": 0.0
+  },
+  "damage_curve_sensitivity": {
+    "no_threshold": {
+      "ead_usd": 100259.63126883731,
+      "damage_by_return_period_usd": [
+        0.0,
+        31755.42268624774,
+        86934.92560311768,
+        160327.0188620861,
+        253665.56110461897,
+        361746.0588503754,
+        479934.2239829664,
+        653459.0645732651,
+        824347.7732813051,
+        1013807.0654554174,
+        1137900.287337511,
+        1213896.5571618911
+      ]
+    },
+    "threshold": {
+      "ead_usd": 13209.97187925577,
+      "damage_by_return_period_usd": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        34830.187517460785,
+        61392.93663654689,
+        102221.64991835345,
+        154720.54109652524,
+        213748.76456921347,
+        313699.0623709973,
+        382244.66929550265,
+        429616.68182781665
+      ]
+    }
+  },
+  "worst_mass_balance_pct_error": 2.1227263506010365e-12,
+  "caveats": [
+    "Terrain, road network and unit costs are synthetic.",
+    "Surge distribution (Gumbel) is illustrative, not gauge-fitted.",
+    "Depth-damage curve is illustrative; shape is plausible, ordinates are not sourced.",
+    "Tide and surge peaks assumed coincident (conservative joint-occurrence case).",
+    "Wave setup, wave overtopping, rainfall and groundwater are not modelled.",
+    "Local-inertial scheme omits advective acceleration; valid for floodplain flow, not for supercritical or strongly advective flow."
+  ]
+}
