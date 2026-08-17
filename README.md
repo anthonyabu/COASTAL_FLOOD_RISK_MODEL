@@ -111,10 +111,7 @@ defensible over this window.
 | Coastal Highway | $822 | 0.03% |
 | Inland Arterial | $0 | 0.00% |
 
-The causeway carries **94% of the risk on 23% of the exposure**. Ranking by asset value,
-or by damage in the 100-year event, would have prioritised the highway instead — the
-highway takes more damage in a rare event, but the causeway floods every few years, and
-expected annual damage is dominated by frequency rather than severity.
+The causeway carries **94% of the risk on 23% of the exposure**. Ranking by asset value would have prioritised the highway instead it is worth 1.8× the causeway. But the causeway begins taking damage at the 10-year event while the highway stays dry until the 100-year, and expected annual damage is dominated by frequency rather than severity.
 
 ![Damage and risk](figures/fig5_damage_and_risk.png)
 
