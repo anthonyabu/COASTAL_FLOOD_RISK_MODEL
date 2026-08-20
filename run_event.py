@@ -17,7 +17,7 @@ def run_event(surge_peak, z=None, manning=None, verbose=False,
     and a time series of the boundary water level and inundated area.
     """
     if z is None or manning is None:
-        z, manning, _, _, _ = build_domain()
+        z, manning, _, _, _, _ = build_domain()
 
     Td = dmg.SURGE_DURATION if surge_duration is None else surge_duration
     t_end = (Td + 6 * 3600.0) if t_end is None else t_end
@@ -60,7 +60,7 @@ def run_event(surge_peak, z=None, manning=None, verbose=False,
 
 
 if __name__ == "__main__":
-    z, manning, assets, x, y = build_domain()
+    z, manning, assets, x, y, deck = build_domain()
     S = dmg.surge_for_return_period(100)
     print(f"Test run: 100-year event, surge {S:.2f} m, "
           f"peak SWL {dmg.peak_still_water_level(S):.2f} m MSL")
